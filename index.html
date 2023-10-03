@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>
-  Abebaw's "multi in one"
-  </title>
-  <link rel="stylesheet" href="body.css">
+	<title>
+		Abebaw's "multi in one"
+	</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js" defer></script>
+	
 </head>
 <body>
 	<nav id="nav_menu">
@@ -32,7 +34,7 @@
 				<ul>
 					<li><a href="#">Football/Soccer</a>
 						<ul>
-							<li> <a href="https://www.google.com/search?q=premier+league+table&sca_esv=568071978&sxsrf=AM9HkKlO933iAM0lhNr9T9ehr0UY8bAzFg%3A1695606215632&ei=x-UQZd2gJunOkPIPhr2l-As&ved=0ahUKEwidoKWx0cSBAxVpJ0QIHYZeCb8Q4dUDCBA&uact=5&oq=premier+league+table&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHByZW1pZXIgbGVhZ3VlIHRhYmxlMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiaGVCMBFiYEHABeAGQAQCYAaABoAHVBaoBAzAuNrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIQEC4YigUYyAMYsAMYQ9gBAcICBxAAGIoFGEPCAgUQLhiABOIDBBgAIEGIBgGQBhS6BgYIARABGAg&sclient=gws-wiz-serp">Premier league table</a></li>
+							<li> <a href="https://www.google.com/search?q=premier+league+table&sca_esv=568071978&sxsrf=AM9HkKlO933iAM0lhNr9T9ehr0UY8bAzFg%3A1695606215632&ei=x-UQZd2gJunOkPIPhr2l-As&ved=0ahUKEwidoKWx0cSBAxVpJ0QIHYZeCb8Q4dUDCBA&uact=5&oq=premier+league+table&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHByZW1pZXIgbGVhZ3VlIHRhYmxlMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiaGVCMBFiYEHABeAGQAQCYAaABoAHVBaoBAzAuNrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIQEC4YigUYyAMYsAMYQ9gBAcICBxAAGIoFGEPCAgUQLhiABOIDBBgAIEGIBgGQBhS6BgYIARABGAg&sclient=gws-wiz-serp" target="_blank">Premier league table</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Athletics</a></li>
@@ -44,17 +46,59 @@
 					<li><a href="#">Email me</a></li>
 				</ul>
 			</li>
+			<li> Account
+				<ul>
+					<li><a href="#" id="showSignup">Sign up</a></li>
+					<li><a href="#" id="showLogin">Login</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
  <br>
- <img src="my_cross.jpg" alt="Ethiopian Orthodox Church Cross" width="300" height="200"> 
- <h1> Lists</h1>
+	<aside>
+		<!-- Signup Form -->
+		<section id="signupForm" class="hidden">
+			<form action="/signup" method="post">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname"> <br><br>
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname"><br><br>
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username"><br><br>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="00000000">
+				<br><br>
+
+				<input type="submit" value="Submit">
+				<input type="button" value="Clear" onclick="clearForm('signupForm')">
+			</form>
+		</section>
+
+		<!-- Login Form -->
+		<section id="loginForm" class="hidden">
+			<form action="/login" method="post">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username"><br><br>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password"><br><br>
+
+				<input type="submit" value="Login">
+				<input type="button" value="Clear" onclick="clearForm('loginForm')">
+			</form>
+		</section>
+	
+	</aside>
+	
+	<img src="my_cross.jpg" alt="Ethiopian Orthodox Church Cross" width="300" height="200"> 
+	<br><br>
+	
+ <h1> Four of 12 men who walked on the moon!</h1>
 <ul>
-    <li>Neil Armstrong</li>
-    <li>Alan Bean</li>
-    <li>Peter Conrad</li>
-    <li>Edgar Mitchell</li>
-    <li>Alan Shepard</li>
+    <li><a href="file:///C:/Users/abeba/OneDrive/Desktop/Desktop/Personal%20files/My%20HTML%20files/z_index_src_file.html">Neil Armstrong</a></li>
+    <li><a href="file:///C:/Users/abeba/OneDrive/Desktop/Desktop/Personal%20files/My%20HTML%20files/z_index_src_file.html">Alan Bean</a></li>
+    <li><a href="file:///C:/Users/abeba/OneDrive/Desktop/Desktop/Personal%20files/My%20HTML%20files/z_index_src_file.html">Peter Conrad</a></li>
+    <li><a href="file:///C:/Users/abeba/OneDrive/Desktop/Desktop/Personal%20files/My%20HTML%20files/z_index_src_file.html">Edgar Mitchell</a></li>
+    <li><a href="file:///C:/Users/abeba/OneDrive/Desktop/Desktop/Personal%20files/My%20HTML%20files/z_index_src_file.html">Alan Shepard</a></li>
 </ul>
 <ol type = "I">
   <li>first item</li>
@@ -85,37 +129,6 @@
   </tr>
 </table>
 
-<a href="san_jaquil.html" title="Link to TownHall" target="new">Click here</a>
-
-<script>
-  const str = "Abebaw";
-  const a = str.charAt(0);
-  const b = str.charCodeAt(0);
-
-  document.write("<br>a is ", a);
-  document.write("<br> b is ", b);
-  document.write("<br>");
-  const array = [10, 20, 30]
-  document.write(array);
-
-  array.push(40);
-  document.write("<br>" + array);
-
-  array.shift();
-  document.write("<br>" + array);
-
-  array.unshift(100);
-  document.write("<br>" + array);
-
-  const strArray = ["Solomon", "David"];
-  const joining = strArray.join(" ");
-  document.write("<br>" + joining);
-
-  const day = new Date(2023, 5, 23, 9, 1, 0, 0);
-  document.write("<br>" + day + "<br>");
-    
-  document.write(Math.SQRT4 + "<br>");
-
-</script>
+<a href="https://www.example.com" title="Link to Example Website" target="new">Click here</a>
 </body>
 </html>
